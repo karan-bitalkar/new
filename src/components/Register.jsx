@@ -26,13 +26,14 @@ function Register() {
       .then((response) => {
         if (response.data) {
           alert("Registerd");
+          reset();
         } else {
           alert("Already Exist");
         }
       })
       .catch((error) => alert(error.message || "Something went wrong"));
 
-      reset();
+      
   };
 
   const reset = () => {
