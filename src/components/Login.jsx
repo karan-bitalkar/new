@@ -18,7 +18,7 @@ function Login() {
   const login = (e) => {
     e.preventDefault();
     axios
-      .post("https://myproject-6329.onrender.comm/login", {
+      .post("https://myproject-6329.onrender.com/login", {
         email: loginForm.email,
         password: loginForm.password,
       })
